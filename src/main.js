@@ -9,6 +9,10 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 //引入element
 
+
+import myCharts from './views/charts/mycharts.js'
+Vue.use(myCharts)
+
 import * as dateFormat from './filters' // global filters
 Object.keys(dateFormat).forEach(key => {
   Vue.filter(key, dateFormat[key])

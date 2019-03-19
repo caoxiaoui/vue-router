@@ -29,7 +29,7 @@ export default {
         {
           id: 3,
           text: "图标",
-          route: "/layout/aa"
+          route: "/layout/setting"
         }
       ]
     }

@@ -36,6 +36,9 @@ export default {
     handleClose(key, keyPath) {
       console.log(key, keyPath)
     }
+  },
+  mounted(){
+    console.log(this.$route.params.stats)
   }
 }
 </script>
@@ -63,6 +66,7 @@ export default {
   text-align: center;
   /* line-height: 160px; */
   padding: 0;
+  min-height: 895px;
 }
 
 body > .el-container {

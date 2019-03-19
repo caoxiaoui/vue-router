@@ -61,13 +61,13 @@ export default {
     }
   },
   methods: {
-    submitForm() {
+    submitForm(stats) {
       // alert("111")
       // this.axios.get(logURL).then(res=>{
       //   console.log(res);
       // })
 
-      this.$router.push({ path: this.redirect || "layout/home" });
+      this.$router.push({ path: this.redirect || "layout/home/?stats" });
       // this.redirdect
 
       // this.$refs.loginForm.validate(valid => {

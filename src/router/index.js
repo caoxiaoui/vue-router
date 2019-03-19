@@ -7,6 +7,7 @@ import list from '@/views/layout/list'
 import setting from '@/views/layout/setting'
 import home from '@/views/list/home'
 import aa from '@/views/list/aa'
+import chart from '@/views/charts/chart'
 
 Vue.use(Router)
 
@@ -46,6 +47,17 @@ export default new Router({
               path:'aa',
               name:'aa',
               component:aa
+            },
+            {
+              path:'list',
+              name:'list',
+              component:list
+            },
+            {
+              path:'chart',
+              name:'chart', 
+              component:chart,
+              meta:{ title:'chart', noCache:true }
             }
           ]
         }
