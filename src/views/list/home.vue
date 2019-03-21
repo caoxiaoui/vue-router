@@ -7,6 +7,18 @@
     </el-carousel>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      compontents: {
+        
+      }
+    }
+  },
+}
+</script>
+
 <style>
 .el-carousel__item h3 {
   color: #475669;
