@@ -7,7 +7,18 @@
           <span>{{item.text}}</span>
         </template>
       </el-menu-item>
-
+      <el-submenu index="4">
+        <template slot="title">
+          <i class="el-icon-menu"></i>
+          <span>eCharts</span>
+          <span>{{slidetext}}</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item v-for="link in links2" :key="link.id" v-bind:index="link.id.toString()" @click="$goRoute(link.route)">{{link.text}}</el-menu-item>
+          <!-- <el-menu-item>Table</el-menu-item>
+          <el-menu-item>二级</el-menu-item> -->
+        </el-menu-item-group>
+      </el-submenu>
     </el-menu>
   </div>
 </template>
@@ -31,9 +42,27 @@ export default {
           text: "图标",
           route: "/layout/setting"
         }
+      ],
+      links2: [
+        {
+          id: '4-1',
+          text: "eCharts",
+          route: "/layout/setting/chart"
+        },
+        {
+          id: '4-2',
+          text: "Table",
+          route: "/layout/setting/list"
+        },
+        {
+          id: '4-3',
+          text: "二级路由",
+          route: "/layout/setting/aa"
+        }
       ]
     }
   },
+  props:['slidetext'],
   methods: {
     handleOpen(key, keyPath) {
       console.log(key, keyPath);

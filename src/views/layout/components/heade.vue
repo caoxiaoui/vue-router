@@ -1,11 +1,11 @@
 <template>
   <div class="heade">
     <div class="logo">
-      <img src="./../../../assets/avatar.gif" alt="">
+      <img src="@/assets/avatar.gif" alt="">
     </div>
     <div class="setting">
       <div class="avatar">
-        <img src="./../../../assets/avatar.gif" alt="">
+        <img src="@/assets/avatar.gif" alt="">
       </div>
       <el-dropdown @command="handleCommand">
         <span class="el-dropdown-link">

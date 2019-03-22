@@ -5,7 +5,7 @@
     </el-header>
     <el-container>
       <el-aside width="200px">
-        <slide/>
+        <slide slidetext='侧边栏导航条'/>
       </el-aside>
       <el-main>
         <keep-alive>
