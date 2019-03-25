@@ -3,7 +3,7 @@
     <el-menu default-active="1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
       <el-menu-item v-for="item in links" :key="item.id" v-bind:index="item.id.toString()" @click="$goRoute(item.route)">
         <template slot="title">
-          <i class="el-icon-location"></i>
+          <i :class="item.icon"></i>
           <span>{{item.text}}</span>
         </template>
       </el-menu-item>
@@ -30,12 +30,20 @@ export default {
         {
           id: 1,
           text: "首页",
+          icon: 'el-icon-location',
           route: "/layout/home"
         },
         {
           id: 2,
           text: "Table",
+          icon: 'el-icon-tickets',
           route: "/layout/list"
+        },
+        {
+          id: 3,
+          text: "组件传值",
+          icon: 'el-icon-sort',
+          route: "/layout/test1"
         }
       ],
       links2: [
@@ -60,7 +68,7 @@ export default {
   props:['slidetext'],
   methods: {
     handleOpen(key, keyPath) {
-      console.log(key, keyPath)
+      console.log(key, keyPath);
     },
     handleClose(key, keyPath) {
       console.log(key, keyPath)
