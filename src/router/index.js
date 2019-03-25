@@ -6,7 +6,7 @@ import layout from '@/views/layout/layout'
 import list from '@/views/layout/list'
 import setting from '@/views/layout/setting'
 import home from '@/views/list/home'
-import aa from '@/views/list/aa'
+import coll from '@/views/list/coll'
 import chart from '@/views/charts/chart'
 
 Vue.use(Router)
@@ -34,9 +34,9 @@ export default new Router({
           component:list
         },
         {
-          path:'aa',
-          name:'aa',
-          component:aa
+          path:'coll',
+          name:'coll',
+          component:coll
         },
         {
           path:'setting',
@@ -44,9 +44,9 @@ export default new Router({
           component:setting,
           children:[
             {
-              path:'aa',
-              name:'aa',
-              component:aa
+              path:'coll',
+              name:'coll',
+              component:coll
             },
             {
               path:'list',

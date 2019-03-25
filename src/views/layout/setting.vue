@@ -1,9 +1,9 @@
 <template>
   <div class="setting">
     <ul>
-      <li v-for="item in links" :key="item.id" v-bind:index="item.id.toString()" @click="$goRoute(item.route)" class="links">
+      <!-- <li v-for="item in links" :key="item.id" v-bind:index="item.id.toString()" @click="$goRoute(item.route)" class="links">
         {{item.text}}
-      </li>
+      </li> -->
     </ul>
     <router-view></router-view>
   </div>
