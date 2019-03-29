@@ -2,18 +2,18 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
-// test
+// test组件传值
 import test1 from '@/components/test1'
 import test2 from '@/components/test2'
-// test
+// test组件传值
 import login from '@/views/login'
 import layout from '@/views/layout/layout'
 import list from '@/views/layout/list'
 import setting from '@/views/layout/setting'
 import home from '@/views/list/home'
 import coll from '@/views/list/coll'
+import input from '@/views/list/input'
 import chart from '@/views/charts/chart'
-import { ENETRESET } from 'constants';
 
 Vue.use(Router)
 
@@ -45,14 +45,14 @@ export default new Router({
           component:coll
         },
         {
+          path:'input',
+          name:'input',
+          component:input
+        },
+        {
           path:'test1',
           name:'test1',
           component:test1
-        },
-        {
-          path:'test2',
-          name:'test2',
-          component:test2
         },
         {
           path:'setting',

@@ -44,6 +44,12 @@ export default {
           text: "组件传值",
           icon: 'el-icon-sort',
           route: "/layout/test1"
+        },
+        {
+          id: 4,
+          text: "Input元素",
+          icon: 'el-icon-tickets',
+          route: "/layout/input"
         }
       ],
       links2: [
@@ -87,5 +93,8 @@ export default {
   padding: 0;
   min-height: 895px;
   border-right: solid 1px #545c64;
+}
+.el-menu{
+  overflow: hidden;
 }
 </style>
