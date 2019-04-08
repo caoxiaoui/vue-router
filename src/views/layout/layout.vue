@@ -8,9 +8,9 @@
         <slide slidetext='侧边栏导航条'/>
       </el-aside>
       <el-main>
-        <keep-alive>
+        <!-- <keep-alive> -->
           <router-view :key="$route.path"></router-view>
-        </keep-alive>
+        <!-- </keep-alive> -->
       </el-main>
     </el-container>
   </el-container>

@@ -13,6 +13,8 @@ import setting from '@/views/layout/setting'
 import home from '@/views/list/home'
 import coll from '@/views/list/coll'
 import input from '@/views/list/input'
+import InlineEditTable from '@/views/list/inLineEdit'
+import pagination from '@/views/list/pagination'
 import chart from '@/views/charts/chart'
 
 Vue.use(Router)
@@ -48,6 +50,16 @@ export default new Router({
           path:'input',
           name:'input',
           component:input
+        },
+        {
+          path:'InlineEditTable',
+          name:'InlineEditTable',
+          component:InlineEditTable
+        },
+        {
+          path:'pagination',
+          name:'pagination',
+          component:pagination
         },
         {
           path:'test1',

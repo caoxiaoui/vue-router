@@ -1,21 +1,32 @@
 <template>
   <div class="home">
     <el-carousel indicator-position="outside">
-      <el-carousel-item v-for="item in 4" :key="item">
-        <h3>{{ item }}</h3>
+      <el-carousel-item v-for="item in carousels" :key="item">
+        <!-- <h3>{{ item }}</h3> -->
+        <img :src="item" alt="" style="height:100%">
       </el-carousel-item>
     </el-carousel>
   </div>
 </template>
 <script>
+//加载图片
+import imgUrl0 from "@/assets/image.jpg"
+import imgUrl1 from "@/assets/avatar.gif"
+import imgUrl2 from "@/assets/logo.png"
+//加载图片
+
 export default {
   data() {
     return {
-      compontents: {
-        
-      }
+      compontents: {},
+      //接收加载的图片
+      carousels: [imgUrl0,imgUrl1,imgUrl2]
     }
   },
+  methods: {
+  },
+  created() {
+  }
 }
 </script>
 

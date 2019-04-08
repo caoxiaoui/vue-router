@@ -7,7 +7,7 @@
           <span>{{item.text}}</span>
         </template>
       </el-menu-item>
-      <el-submenu index="3">
+      <el-submenu index="4">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>eCharts</span>
@@ -50,21 +50,33 @@ export default {
           text: "Input元素",
           icon: 'el-icon-tickets',
           route: "/layout/input"
+        },
+        {
+          id: 5,
+          text: "InlineEditTable",
+          icon: 'el-icon-tickets',
+          route: "/layout/InlineEditTable"
+        },
+        {
+          id: 6,
+          text: "分页",
+          icon: 'el-icon-tickets',
+          route: "/layout/pagination"
         }
       ],
       links2: [
         {
-          id: '3-1',
+          id: '7-1',
           text: "eCharts",
           route: "/layout/setting/chart"
         },
         {
-          id: '3-2',
+          id: '7-2',
           text: "Table",
           route: "/layout/setting/list"
         },
         {
-          id: '3-3',
+          id: '7-3',
           text: "折叠面板",
           route: "/layout/setting/coll"
         }

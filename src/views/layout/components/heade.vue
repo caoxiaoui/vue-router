@@ -14,8 +14,8 @@
         </span>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="a">个人中心</el-dropdown-item>
-          <el-dropdown-item command="b">我的博客</el-dropdown-item>
-          <el-dropdown-item command="c" divided @click="$goRoute('/')">退出登录</el-dropdown-item>
+          <el-dropdown-item command="b" @click.native="blog">我的博客</el-dropdown-item>
+          <el-dropdown-item command="c" divided @click.native="$goRoute('/')">退出登录</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
     </div>
@@ -32,6 +32,9 @@ export default {
   methods: {
     handleCommand(command) {
       this.$message("click on item " + command);
+    },
+    blog() {
+      window.location.href = "https://www.cnblogs.com/caoxen/";
     }
   }
 };
@@ -47,18 +50,19 @@ export default {
 .el-icon-arrow-down {
   font-size: 12px;
 }
-.heade,.setting{
+.heade,
+.setting {
   height: 60px;
   display: flex;
   justify-content: space-between;
 }
-.avatar img{
+.avatar img {
   height: 59px;
 }
-.el-dropdown-menu{
+.el-dropdown-menu {
   margin: 0;
 }
-.el-dropdown-link{
+.el-dropdown-link {
   display: block;
 }
 </style>
