@@ -88,7 +88,7 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style>
 .login {
   background-color: #2f4f4f;
   height: -webkit-fill-available;

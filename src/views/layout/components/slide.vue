@@ -7,7 +7,7 @@
           <span>{{item.text}}</span>
         </template>
       </el-menu-item>
-      <el-submenu index="4">
+      <el-submenu index="7">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>eCharts</span>
